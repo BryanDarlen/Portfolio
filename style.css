@@ -133,5 +133,18 @@ ul li a:hover{
   font-family: 'Dancing Script', cursive;
   font-weight: 600;
   font-size: 1.5em;
-  color: #000; /* you can change the color if you want */
+  color: #000;
+  overflow: hidden;
+  border-right: 0.1em solid black;
+  white-space: nowrap;
+  animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 12ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
