@@ -22,7 +22,43 @@
         </div>
 
         <div class="info">  
-            <h3>Hi, I'm <span class="curly-name">Bryan</span></h3>
+            <h3>Hi, I'm <span class="curly-name" id="typing"></span></h3>
+            <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const text = "Bryan"; 
+            const typingSpeed = 150; 
+            const erasingSpeed = 100; 
+            const delayBetween = 1000;
+            const element = document.getElementById("typing");
+
+            let index = 0;
+            let typing = true;
+
+            function type() {
+                if (typing) {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    typing = false;
+                    setTimeout(type, delayBetween);
+                }
+                } else {
+                if (index > 0) {
+                    element.textContent = text.substring(0, index - 1);
+                    index--;
+                    setTimeout(type, erasingSpeed);
+                } else {
+                    typing = true;
+                    setTimeout(type, delayBetween);
+                }
+                }
+            }
+
+            type();
+            });
+            </script>
             <h1><span>D</span>ATA<span> A</span>NALYST</h1>
             <h3>Data Analyst based in Palembang, Indonesia. 
                 I turn complex data into <br> clear stories that drive business growth.</h3>
