@@ -3,14 +3,28 @@
     padding: 0;
 }
 
-.main{
-    width: 100%;
-    background: url(pic/bg.jpg);
+body {
+    background-image: url(pic/bg.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    background-image: url(pic/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
     position: relative;
     font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -139,4 +153,53 @@ ul li a:hover{
   overflow: hidden;
 }
 
+.about {
+    width: 86%; /* same as navbar width for alignment */
+    margin: 0 auto; /* center horizontally */
+    padding-top: 150px; /* space from top to match visual layout */
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
 
+.about span{
+    color: orange;   
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center; /* center the text with lines on both sides */
+    position: relative;
+}
+
+.about h2::before,
+.about h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px; /* line thickness */
+    background: black;
+}
+
+.about h2::before {
+    left: 0;
+}
+
+.about h2::after {
+    right: 0;
+}
+
+.about h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.about p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+}
