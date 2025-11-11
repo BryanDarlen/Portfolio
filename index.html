@@ -6,6 +6,10 @@
     <title> Portfolio</title>
     <link rel="icon" type="image/png" href="pic/tie.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,7 +20,7 @@
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
+                <li><a href="#section-title">BACKGROUND</a></li>
                 <li><a href="#">MY WORKS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
@@ -26,9 +30,9 @@
             <h3>Hi, I'm <span class="curly-name" id="typing"></span></h3>
                 <script>
                 document.addEventListener("DOMContentLoaded", () => {
-                const text = "Bryan"; 
-                const typingSpeed = 150; 
-                const erasingSpeed = 100; 
+                const text = "Bryan Darlen"; 
+                const typingSpeed = 100; 
+                const erasingSpeed = 40; 
                 const delayBetween = 1000;
                 const element = document.getElementById("typing");
 
@@ -78,12 +82,130 @@
         </div>
     </div>
         <div class="about" id="about">
-            <h2><span>A</span>bout <span>M</span>e</h2>
-            <h3>I'm Bryan Quinn Darlen, Data Analyst</h3>
+            <h2>About Me</h2>
+            <h3>I'm Bryan Quinn Darlen, <span id="typing-title"></span></h3>
+            <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const text = "Data Analyst";      // text to type
+                const typingSpeed = 100; 
+                const erasingSpeed = 40; 
+                const delayBetween = 1000;
+                const element = document.getElementById("typing-title");
+
+                let index = 0;
+                let typing = true;
+
+                function type() {
+                    if (typing) {
+                        if (index < text.length) {
+                            element.textContent += text.charAt(index);
+                            index++;
+                            setTimeout(type, typingSpeed);
+                        } else {
+                            typing = false;
+                            setTimeout(type, delayBetween);
+                        }
+                    } else {
+                        if (index > 0) {
+                            element.textContent = text.substring(0, index - 1);
+                            index--;
+                            setTimeout(type, erasingSpeed);
+                        } else {
+                            typing = true;
+                            setTimeout(type, delayBetween);
+                        }
+                    }
+                }
+
+                type();
+            });
+            </script>
             <p>
                 Results-driven Data Analyst with hands-on experience in analyzing complex datasets and turning them into actionable insights that drive business decisions. Skilled in data visualization, statistical analysis, and business intelligence tools. Proficient in Python, SQL, and Power BI. Passionate about helping organizations make data-driven decisions efficiently.
             </p>
         </div>
+    <div class="info-section">
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>Personal Profile</h4>
+                <p><span class="highlight">LinkedIn:</span> <a href="https://linkedin.com/in/bryan-quinn-darlen" target="_blank">Bryan Quinn Darlen</a></p>
+                <p><span class="highlight">Experience:</span> > 2 Years</p>
+            </div>    
+
+            <div class="info-card">
+                <h4>Education</h4>
+                <p><span class="highlight">Degree:</span> Computer Science (DA)</p>
+                <p><span class="highlight">Part Time:</span> Technical Assistant</p>
+            </div>
+            
+            
+            <div class="info-card">
+                <h4>Personal Details</h4>
+                <p><span class="highlight">Nationality:</span> Indonesia</p>
+                <p><span class="highlight">Age:</span> 20</p>
+            </div>
+            
+            <div class="info-card">
+                <h4>Contact Information</h4>
+                <p><span class="highlight">Email:</span> darlen.bryan77@gmail.com</p>
+                <p><span class="highlight">Phone:</span> +60-11-2319-7332</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Skills</h4>
+                <p><span class="highlight">Python:</span> Intermediate</p>
+                <p><span class="highlight">SQL:</span> Intermediate</p>
+                <p><span class="highlight">Excel:</span> Intermediate</p>
+                <p><span class="highlight">C Programming:</span> Intermediate</p>
+            </div>
+        </div>
+    </div>    
+    
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-title" id="section-title">
+                <h2>Background</h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2023 - Present</div>
+                        <h3 class="timeline-title">BSc Hons Computer Science Data Analytics</h3>
+                        <div class="timeline-location">Asia Pacific University of Technology & Innovation</div>
+                        <p class="timeline-description">Computer Science Specialism in Data Analytics. Currently pursuing degree with focus on data analysis, machine learning, and AI technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 2024 - April 2025</div>
+                        <h3 class="timeline-title">Part Time Technical Assistant</h3>
+                        <div class="timeline-location">Asia Pacific University of Technology & Innovation</div>
+                        <p class="timeline-description">Provided technical support and assistance in computer labs, helped students with software and hardware issues, and assisted in maintaining IT infrastructure.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2025 - November 2025</div>
+                        <h3 class="timeline-title">Data Engineer (Internship)</h3>
+                        <div class="timeline-location">Mandrill Tech Sdn Bhd.</div>
+                        <p class="timeline-description">Worked on data pipeline development, ETL processes, and database optimization. Assisted in building data warehouses and implementing data governance policies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
     
