@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title> Portfolio</title>
     <link rel="icon" type="image/png" href="pic/tie.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,7 @@
 
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#">SKILLS</a></li>
                 <li><a href="#">MY WORKS</a></li>
                 <li><a href="#">CONTACT</a></li>
@@ -24,42 +24,42 @@
 
         <div class="info">  
             <h3>Hi, I'm <span class="curly-name" id="typing"></span></h3>
-            <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            const text = "Bryan"; 
-            const typingSpeed = 150; 
-            const erasingSpeed = 100; 
-            const delayBetween = 1000;
-            const element = document.getElementById("typing");
+                <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                const text = "Bryan"; 
+                const typingSpeed = 150; 
+                const erasingSpeed = 100; 
+                const delayBetween = 1000;
+                const element = document.getElementById("typing");
 
-            let index = 0;
-            let typing = true;
+                let index = 0;
+                let typing = true;
 
-            function type() {
-                if (typing) {
-                if (index < text.length) {
-                    element.textContent += text.charAt(index);
-                    index++;
-                    setTimeout(type, typingSpeed);
-                } else {
-                    typing = false;
-                    setTimeout(type, delayBetween);
+                function type() {
+                    if (typing) {
+                    if (index < text.length) {
+                        element.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(type, typingSpeed);
+                    } else {
+                        typing = false;
+                        setTimeout(type, delayBetween);
+                    }
+                    } else {
+                    if (index > 0) {
+                        element.textContent = text.substring(0, index - 1);
+                        index--;
+                        setTimeout(type, erasingSpeed);
+                    } else {
+                        typing = true;
+                        setTimeout(type, delayBetween);
+                    }
+                    }
                 }
-                } else {
-                if (index > 0) {
-                    element.textContent = text.substring(0, index - 1);
-                    index--;
-                    setTimeout(type, erasingSpeed);
-                } else {
-                    typing = true;
-                    setTimeout(type, delayBetween);
-                }
-                }
-            }
 
-            type();
-            });
-            </script>
+                type();
+                });
+                </script>
             <h1><span>D</span>ATA<span> A</span>NALYST</h1>
             <h3>Data Analyst based in Palembang, Indonesia. 
                 I turn complex data into <br> clear stories that drive business growth.</h3>
@@ -68,17 +68,24 @@
         </div>
 
         <div class="image">
-            <img src="pic/me.jpeg" class="girl">
+            <img src="pic/me.jpeg" class="boy">
         </div>
 
         <div class="icons">
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.instagram.com/bryandarlenn/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
         </div>
     </div>
-
+        <div class="about" id="about">
+            <h2><span>A</span>bout <span>M</span>e</h2>
+            <h3>I'm Bryan Quinn Darlen, Data Analyst</h3>
+            <p>
+                Results-driven Data Analyst with hands-on experience in analyzing complex datasets and turning them into actionable insights that drive business decisions. Skilled in data visualization, statistical analysis, and business intelligence tools. Proficient in Python, SQL, and Power BI. Passionate about helping organizations make data-driven decisions efficiently.
+            </p>
+        </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
     
 </body>
 </html>
