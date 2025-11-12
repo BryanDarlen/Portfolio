@@ -21,7 +21,7 @@
                 <li><a href="#">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#section-title">BACKGROUND</a></li>
-                <li><a href="#">MY WORKS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
@@ -208,7 +208,80 @@
     
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
-    
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Procurement Order Tracking System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Procurement Order Tracking System (POTS)</h3>
+                        <p class="project-description">
+                            Developed a Procurement Order Tracking System (POTS) in Java as part of a team project, utilizing Object-Oriented Programming (OOP) principles. The system includes user authentication, item and supplier management, purchase requisition, purchase order generation, and approval workflows, improving procurement efficiency and accuracy. Implemented GUI components and database integration to enhance usability and functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">GUI</span>
+                            <span class="tech-tag">Database</span>
+                            <span class="tech-tag">Team Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1190&q=80" alt="GongBot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GongBot 🤖</h3>
+                        <p class="project-description">
+                            I developed a specialized chatbot using Botpress, designed to provide expert guidance on various types of gongs, gong techniques, and equipment recommendations while enabling interactive assistance for percussionists, catering to both beginners and professionals.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Botpress</span>
+                            <span class="tech-tag">Chatbot</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Interactive Assistance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>    
 </body>
 </html>
-
