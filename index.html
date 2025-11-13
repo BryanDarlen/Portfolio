@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan Darlen - Portfolio</title>
+    <title>Bryan's Portfolio</title>
     <link rel="icon" type="image/png" href="pic/tie.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="main">
         <div class="navbar">
             <img src="pic/logo.png" class="logo">
@@ -33,7 +32,8 @@
                 const text = "Bryan Darlen"; 
                 const typingSpeed = 100; 
                 const erasingSpeed = 40; 
-                const delayBetween = 1000;
+                const delayBeforeErasing = 8000;
+                const delayBeforeTyping = 0;
                 const element = document.getElementById("typing");
 
                 let index = 0;
@@ -47,7 +47,7 @@
                         setTimeout(type, typingSpeed);
                     } else {
                         typing = false;
-                        setTimeout(type, delayBetween);
+                        setTimeout(type, delayBeforeErasing);
                     }
                     } else {
                     if (index > 0) {
@@ -56,7 +56,7 @@
                         setTimeout(type, erasingSpeed);
                     } else {
                         typing = true;
-                        setTimeout(type, delayBetween);
+                        setTimeout(type, delayBeforeTyping);
                     }
                     }
                 }
@@ -68,7 +68,7 @@
             <h3>Data Analyst based in Palembang, Indonesia. 
                 I turn complex data into <br> clear stories that drive business growth.</h3>
 
-                <a href="https://my.linkedin.com/in/bryan-quinn-darlen" target="_blank" rel="noopener noreferrer">Let's Connect!</a>
+                <a href="https://my.linkedin.com/in/bryan-quinn-darlen" target="_blank" rel="noopener noreferrer">Hire Me!</a>
         </div>
 
         <div class="image">
@@ -86,10 +86,11 @@
             <h3>I'm Bryan Quinn Darlen, <span id="typing-title"></span></h3>
             <script>
             document.addEventListener("DOMContentLoaded", () => {
-                const text = "Data Analyst";      // text to type
+                const text = "Data Analyst";      
                 const typingSpeed = 100; 
                 const erasingSpeed = 40; 
-                const delayBetween = 1000;
+                const delayBeforeErasing = 8000; // 8 seconds delay after typing
+                const delayBeforeTyping = 0; // 1 second delay after erasing
                 const element = document.getElementById("typing-title");
 
                 let index = 0;
@@ -103,7 +104,7 @@
                             setTimeout(type, typingSpeed);
                         } else {
                             typing = false;
-                            setTimeout(type, delayBetween);
+                            setTimeout(type, delayBeforeErasing); // Wait 8 seconds before erasing
                         }
                     } else {
                         if (index > 0) {
@@ -112,7 +113,7 @@
                             setTimeout(type, erasingSpeed);
                         } else {
                             typing = true;
-                            setTimeout(type, delayBetween);
+                            setTimeout(type, delayBeforeTyping); // Wait 1 second before typing again
                         }
                     }
                 }
@@ -127,36 +128,38 @@
     <div class="info-section">
         <div class="info-grid">
             <div class="info-card">
-                <h4>Personal Profile</h4>
-                <p><span class="highlight">LinkedIn:</span> <a href="https://linkedin.com/in/bryan-quinn-darlen" target="_blank">Bryan Quinn Darlen</a></p>
-                <p><span class="highlight">Experience:</span> > 2 Years</p>
-            </div>    
+                <h4>Personal Details</h4>
+                <p><span class="highlight">Name:</span> Bryan Quinn Darlen</p>
+                <p><span class="highlight">Nationality:</span> Indonesia</p>
+                <p><span class="highlight">Hobbies:</span> Games, Piano</p>
+                <p><span class="highlight">Interests:</span> Making Connections</p>
+            </div>
 
             <div class="info-card">
                 <h4>Education</h4>
-                <p><span class="highlight">Degree:</span> Computer Science (DA)</p>
-                <p><span class="highlight">Part Time:</span> Technical Assistant</p>
+                <p><span class="highlight">Degree:</span> Bachelor of Computer Science (Specialism in Data Analytics)</p>
+                <p><span class="highlight">University:</span> Asia Pacific University</p>
             </div>
-            
-            
+
             <div class="info-card">
-                <h4>Personal Details</h4>
-                <p><span class="highlight">Nationality:</span> Indonesia</p>
-                <p><span class="highlight">Age:</span> 20</p>
+                <h4>Professional Experience</h4>
+                <p><span class="highlight">Part-Time:</span> Technical Assistant</p>
+                <p><span class="highlight">Internship:</span> Data Engineer</p>
+                <p><span class="highlight">Experience:</span> > 2 Years</p>
             </div>
-            
+
             <div class="info-card">
                 <h4>Contact Information</h4>
-                <p><span class="highlight">Email:</span> darlen.bryan77@gmail.com</p>
+                <p><span class="highlight">Email:</span> <a href="mailto:darlen.bryan77@gmail.com">darlen.bryan77@gmail.com</a></p>
+                <p><span class="highlight">LinkedIn:</span> <a href="https://linkedin.com/in/bryan-quinn-darlen" target="_blank">Bryan Quinn Darlen</a></p>
                 <p><span class="highlight">Phone:</span> +60-11-2319-7332</p>
             </div>
 
             <div class="info-card">
                 <h4>Skills</h4>
-                <p><span class="highlight">Python:</span> Intermediate</p>
-                <p><span class="highlight">SQL:</span> Intermediate</p>
-                <p><span class="highlight">Excel:</span> Intermediate</p>
-                <p><span class="highlight">C Programming:</span> Intermediate</p>
+                <p><span class="highlight">Programming Language:</span> Python, SQL, C Programming</p>
+                <p><span class="highlight">Data & BI Tools:</span> Excel, Power BI</p>
+                <p><span class="highlight">Other Skills:</span> Data Cleaning, Data Visualization, Statistical Analysis</p>
             </div>
         </div>
     </div>    
@@ -220,7 +223,7 @@
                                 <a href="#" class="project-link" title="View Project">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="#" class="project-link" title="Source Code">
+                                <a href="https://github.com/BryanDarlen/OODJ_GroupAssignment" class="project-link" title="Source Code">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -246,11 +249,10 @@
                         <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1190&q=80" alt="GongBot">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" title="View Project">
+                                <a href="https://drive.google.com/file/d/1zNNWss-1LE-mwgUH8McICQ2cTN5yx_iN/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link" title="View Project">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="#" class="project-link" title="Source Code">
-                                    <i class="fab fa-github"></i>
+
                                 </a>
                             </div>
                         </div>
@@ -274,6 +276,7 @@
     </section>
 
     <script>
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -283,6 +286,87 @@
             });
         });
     </script>    
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p class="contact-subtitle">Feel free to reach out to me for any inquiries, collaborations, or opportunities. I'm always open to discussing new projects and creative ideas. Let's connect and build something amazing together!</p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="What is this regarding?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Please share your message, project details, or inquiry..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS with your Public Key
+        (function() {
+            emailjs.init("mmtvpaNk7inYkWn9A"); // Replace with your actual Public Key
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get the submit button and change text to show loading
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Send the email
+            emailjs.sendForm('service_kn42ugc', 'template_6u87syc', this)
+                .then(function() {
+                    // Success message
+                    alert('Message sent successfully! I\'ll get back to you soon.');
+                    document.getElementById('contactForm').reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, function(error) {
+                    // Error message
+                    alert('Failed to send message. Please try again or contact me directly.');
+                    console.error('EmailJS Error:', error);
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
+    
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy; 2023 Bryan Darlen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
-
