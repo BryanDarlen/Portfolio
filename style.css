@@ -659,6 +659,7 @@ ul li a:hover{
 
 .form-group {
     margin-bottom: 25px;
+    width: 95.9%;
 }
 
 .form-group label {
@@ -767,3 +768,4 @@ footer {
     color: #ddd;
     text-align: center;
 }
+
