@@ -68,7 +68,7 @@ ul li a:hover{
 
 .info{
     margin-left: 7%;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 
 .info h1{
@@ -114,7 +114,7 @@ ul li a:hover{
     position: absolute;
     height: 100%;
     left: 70%;
-    top: -20%;
+    top: -10%;
     transform: translate(-55%);
     bottom: 0;
 
@@ -768,4 +768,5 @@ footer {
     color: #ddd;
     text-align: center;
 }
+
 
