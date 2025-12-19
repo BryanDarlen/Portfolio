@@ -126,16 +126,20 @@ ul li a:hover{
     left: 55%;
 }
 
+.icons {
+    display: flex;
+    gap: 20px;
+    margin-left: 7%;
+}
+
 .icons a{
     text-decoration: none;
     color: #000;
 }
 
-.icons ion-icon{
-    margin-left: 7%;
-    color: #000;
-    margin-right: -60px;
+.icons ion-icon {
     font-size: 40px;
+    color: #000;
     transition: .4s ease;
 }
 
@@ -771,6 +775,7 @@ footer {
 
 
 @media (max-width: 768px) {
+
     .main {
         padding-bottom: 60px;
     }
@@ -805,6 +810,15 @@ footer {
         border-radius: 15px;
     }
 
+    .icons {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .icons ion-icon {
+        font-size: 32px;
+    }
 
     .navbar {
         flex-direction: column;
