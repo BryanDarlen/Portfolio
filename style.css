@@ -770,3 +770,90 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    .main {
+        padding-bottom: 60px;
+    }
+
+    .info {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .image {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image img {
+        position: static;
+        width: 80%;
+        height: auto;
+        transform: none;
+        border-radius: 15px;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    ul {
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .navbar .logo {
+        margin: 0;
+        width: 130px;
+    }
+
+    .timeline-container::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+        left: 0 !important;
+    }
+
+    .timeline-icon {
+        left: 0 !important;
+        right: auto;
+    }
+
+    .timeline-content::after {
+        left: -10px !important;
+        right: auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
