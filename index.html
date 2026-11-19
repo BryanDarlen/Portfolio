@@ -26,49 +26,14 @@
         </div>
 
         <div class="info">  
-            <h3>Hi, I'm <span class="curly-name" id="typing"></span></h3>
-                <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                const text = "Bryan Darlen"; 
-                const typingSpeed = 100; 
-                const erasingSpeed = 40; 
-                const delayBeforeErasing = 8000;
-                const delayBeforeTyping = 0;
-                const element = document.getElementById("typing");
+            <h1>Bryan Quinn Darlen</h1>
+            <p class="hero-tagline">Technology · Data · Business</p>
+            <h3>A Computer Science professional with experience in data engineering, technical support, business operations, and system implementation. Interested in using technology and data to solve practical business problems.</h3>
 
-                let index = 0;
-                let typing = true;
-
-                function type() {
-                    if (typing) {
-                    if (index < text.length) {
-                        element.textContent += text.charAt(index);
-                        index++;
-                        setTimeout(type, typingSpeed);
-                    } else {
-                        typing = false;
-                        setTimeout(type, delayBeforeErasing);
-                    }
-                    } else {
-                    if (index > 0) {
-                        element.textContent = text.substring(0, index - 1);
-                        index--;
-                        setTimeout(type, erasingSpeed);
-                    } else {
-                        typing = true;
-                        setTimeout(type, delayBeforeTyping);
-                    }
-                    }
-                }
-
-                type();
-                });
-                </script>
-            <h1><span>D</span>ATA<span> A</span>NALYST</h1>
-            <h3>Data Analyst based in Palembang, Indonesia. 
-                I turn complex data into <br> clear stories that drive business growth.</h3>
-
-                <a href="https://my.linkedin.com/in/bryan-quinn-darlen" target="_blank" rel="noopener noreferrer">Connect Me!</a>
+            <div class="hero-actions">
+                <a href="#section-title">View Background</a>
+                <a href="#contact">Contact Me</a>
+            </div>
         </div>
 
         <div class="image">
@@ -83,46 +48,9 @@
     </div>
         <div class="about" id="about">
             <h2>About Me</h2>
-            <h3>I'm Bryan Quinn Darlen, <span id="typing-title"></span></h3>
-            <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const text = "Data Analyst";      
-                const typingSpeed = 100; 
-                const erasingSpeed = 40; 
-                const delayBeforeErasing = 8000; // 8 seconds delay after typing
-                const delayBeforeTyping = 0; // 1 second delay after erasing
-                const element = document.getElementById("typing-title");
-
-                let index = 0;
-                let typing = true;
-
-                function type() {
-                    if (typing) {
-                        if (index < text.length) {
-                            element.textContent += text.charAt(index);
-                            index++;
-                            setTimeout(type, typingSpeed);
-                        } else {
-                            typing = false;
-                            setTimeout(type, delayBeforeErasing); // Wait 8 seconds before erasing
-                        }
-                    } else {
-                        if (index > 0) {
-                            element.textContent = text.substring(0, index - 1);
-                            index--;
-                            setTimeout(type, erasingSpeed);
-                        } else {
-                            typing = true;
-                            setTimeout(type, delayBeforeTyping); // Wait 1 second before typing again
-                        }
-                    }
-                }
-
-                type();
-            });
-            </script>
+                <h3>I’m Bryan Quinn Darlen, passionate about technology, data, and business.</h3>
             <p>
-                Results-driven Data Analyst with hands-on experience in analyzing complex datasets and turning them into actionable insights that drive business decisions. Skilled in data visualization, statistical analysis, and business intelligence tools. Proficient in Python, SQL, and Power BI. Passionate about helping organizations make data-driven decisions efficiently.
+                    My experience spans data engineering, technical support, business operations, and system implementation. I enjoy connecting technical knowledge with real-world business needs, learning how organizations operate, and turning complex challenges into clear, useful solutions.
             </p>
         </div>
     <div class="info-section">
@@ -139,13 +67,6 @@
                 <h4>Education</h4>
                 <p><span class="highlight">Degree:</span> Bachelor of Computer Science (Specialism in Data Analytics)</p>
                 <p><span class="highlight">University:</span> Asia Pacific University</p>
-            </div>
-
-            <div class="info-card">
-                <h4>Professional Experience</h4>
-                <p><span class="highlight">Part-Time:</span> Technical Assistant</p>
-                <p><span class="highlight">Internship:</span> Data Engineer</p>
-                <p><span class="highlight">Experience:</span> > 2 Years</p>
             </div>
 
             <div class="info-card">
@@ -175,7 +96,7 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="timeline-content">
-                        <div class="timeline-date">September 2023 - Present</div>
+                        <div class="timeline-date">September 2023 - September 2026</div>
                         <h3 class="timeline-title">BSc Hons Computer Science Data Analytics</h3>
                         <div class="timeline-location">Asia Pacific University of Technology & Innovation</div>
                         <p class="timeline-description">Computer Science Specialism in Data Analytics. Currently pursuing degree with focus on data analysis, machine learning, and AI technologies.</p>
@@ -203,6 +124,29 @@
                         <h3 class="timeline-title">Data Engineer (Internship)</h3>
                         <div class="timeline-location">Mandrill Tech Sdn Bhd.</div>
                         <p class="timeline-description">Worked on data pipeline development, ETL processes, and database optimization. Assisted in building data warehouses and implementing data governance policies.</p>
+                        <div class="timeline-media">
+                            <img src="pic/mandrill-team.jpg" alt="Data Engineer internship team at Mandrill Tech">
+                            <img src="pic/mandrill-office.jpg" alt="Bryan at the Mandrill Tech office">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item cbd-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-copy">
+                            <div class="timeline-date">September 2026 - Present</div>
+                            <h3 class="timeline-title">Customer Business Development (Internship)</h3>
+                            <div class="timeline-location">Unilever (Malaysia) Holdings Sdn Bhd.</div>
+                            <p class="timeline-description">Supporting Unilever's distributor platform implementation by onboarding and training distributors and retailers. Developing practical knowledge of sales and distribution processes, including order processing, warehouse operations, promotions, and field sales. Collaborating with teams to resolve system and user issues while gaining exposure to inventory checks, order fulfilment, and delivery operations.</p>
+                        </div>
+                        <div class="timeline-media">
+                            <img src="pic/cbd-team.jpg" alt="Customer Business Development internship team at a distributor location">
+                            <img src="pic/cbd-unilever-office.jpg" alt="Bryan at the Unilever office">
+                            <img src="pic/cbd-product-platform.jpg" alt="Unilever product information displayed on the distributor platform">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -393,7 +337,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="copyright">
-                <p>&copy; 2025 Bryan Darlen. All Rights Reserved.</p>
+                <p>&copy; 2026 Bryan Darlen. All Rights Reserved.</p>
             </div>
         </div>
     </div>
